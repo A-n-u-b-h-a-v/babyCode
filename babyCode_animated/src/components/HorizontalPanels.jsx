@@ -159,7 +159,7 @@ const HorizontalPanels = forwardRef(function HorizontalPanels(
   {/* PANEL 3 */}
   <div
     ref={panelThreeRef}
-    className="absolute top-1/2 left-0 w-full h-[50vh] -translate-y-1/2 rounded-4xl overflow-hidden"
+    className="absolute left-0 w-full h-[50vh] -translate-y-1/2 rounded-4xl overflow-hidden"
     style={{
       clipPath: "inset(50% 0% 50% 0% round 2rem)",
     }}
