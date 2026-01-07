@@ -72,7 +72,7 @@ const GridStage = forwardRef(function GridStage(
                   alt=""
                 />
                 <div ref={sectionFourRef} className="absolute top-1/4  z-[999] left-10 text-white text-center">
-                  <h1 className="text-[12rem] leading-44 text-start">Expert <br />Trainers
+                  <h1 className="text-[clamp(6rem, 12vw, 12rem)] leading-44 text-start">Expert <br />Trainers
                   </h1>
                   <p className="max-w-[35ch] text-xl text-start ">Get coached by certified mentors with real exam insights and personalized feedback.</p>
                 </div>
@@ -80,7 +80,7 @@ const GridStage = forwardRef(function GridStage(
             </div>
           </div>
           <div ref={sectionFourUnderRef} className="absolute top-1/4 z left-10 text-white text-center">
-                  <h1 className="text-[12rem] leading-44 text-start">Expert <br />Trainers
+                  <h1 className="text-[clamp(6rem, 12vw, 12rem)] leading-44 text-start">Expert <br />Trainers
                   </h1>
                   <p className="max-w-[35ch] text-xl text-start ">Get coached by certified mentors with real exam insights and personalized feedback.</p>
                 </div>

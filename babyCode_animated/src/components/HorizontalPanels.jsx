@@ -80,7 +80,7 @@ const HorizontalPanels = forwardRef(function HorizontalPanels(
             className="w-4/6 mt-20 flex flex-col gap-3 overflow-hidden"
           >
             <div className="overflow-hidden">
-              <h1 className="text-[12em] font-extrabold mollen-bold">
+              <h1 className="text-[clamp(6rem, 12vw, 12rem)] font-extrabold mollen-bold">
                 Achieve Your
                 <span className="text-red-500"> IELTS Band</span>
               </h1>
@@ -161,7 +161,7 @@ const HorizontalPanels = forwardRef(function HorizontalPanels(
     ref={panelThreeRef}
     className="absolute left-0 w-full h-[50vh] -translate-y-1/2 rounded-4xl overflow-hidden"
     style={{
-      clipPath: "inset(50% 0% 50% 0% round 2rem)",
+      clipPath: "inset(100% 0% 50% 0% round 2rem)",
     }}
   >
     <img

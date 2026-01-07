@@ -240,19 +240,19 @@ const App = () => {
       tl.to(sectionThreeRef.current, { x: "-35%", duration: 1.0, ease: "power2.inOut" }, "grid-close");
       
       const underEls = [
-        sectionFourUnderRef.current.querySelector("h1"),
-        sectionFourUnderRef.current.querySelector("p")
+        sectionFourUnderRef.current?.querySelector("h1"),
+        sectionFourUnderRef.current?.querySelector("p")
       ].filter(Boolean);
       
       const mainEls = [
-        sectionFourRef.current.querySelector("h1"),
-        sectionFourRef.current.querySelector("p")
+        sectionFourRef.current?.querySelector("h1"),
+        sectionFourRef.current?.querySelector("p")
       ].filter(Boolean);
       
       tl.to(
         mainEls,
         {
-          x: "800",
+          x: "855",
           z: 30,
           duration: 1.0,
           ease: "power2.inOut",
@@ -275,9 +275,10 @@ const App = () => {
         animation: tl,
         trigger: sceneRef.current,
         start: "top top",
-        end: "+=4500",
-        scrub: 0.9,
+        end: () => window.innerHeight * 8,
+        scrub: 3,
         pin: true,
+        anticipatePin: 1,
         markers: false,
       });
     }, sceneRef);
