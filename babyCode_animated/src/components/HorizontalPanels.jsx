@@ -80,7 +80,7 @@ const HorizontalPanels = forwardRef(function HorizontalPanels(
             className="w-4/6 mt-20 flex flex-col gap-3 overflow-hidden"
           >
             <div className="overflow-hidden">
-              <h1 className="text-[clamp(6rem, 12vw, 12rem)] font-extrabold mollen-bold">
+              <h1 className="text-[12vw] font-extrabold mollen-bold">
                 Achieve Your
                 <span className="text-red-500"> IELTS Band</span>
               </h1>

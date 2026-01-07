@@ -109,8 +109,9 @@ const App = () => {
         )
         .fromTo(
           panelThreeRef.current,
-          { y: "-25vh", clipPath: "inset(100% 0% 50% 0% round 2rem)" },
+          { scale: 0, transformOrigin: "center", clipPath: "inset(100% 0% 50% 0% round 2rem)" },
           {
+            scale: 1,
             clipPath: "inset(0% 0% 0% 0% round 2rem)",
             duration: 1.2,
             ease: "power3.inOut",
